@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="icon"><i class="fas fa-user-tie fa-5x"></i>
+        </div>
+        <div class="content">
+            <h3>You :
+                <%= userMessage %>
+            </h3>
+            <h4>Bot :
+                <%= botReply %>
+            </h4>
+        </div>
+        <form class="form" action="/" method="post">
+            <input type="text" name="msg" placeholder=" Enter Message.." autocomplete="off">
+            <button class="btn" type="submit"><i class="fas fa-microphone-alt fa-2x "></i></button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
